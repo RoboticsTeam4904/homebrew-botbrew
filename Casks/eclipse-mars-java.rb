@@ -12,4 +12,10 @@ cask 'eclipse-mars-java' do
   depends_on arch: :x86_64
 
   app 'Eclipse.app'
+
+  zap delete: [
+    '~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.eclipse.platform.ide.sfl',
+    '~/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.eclipse.platform.ide.sfl',
+    '~/Library/Preferences/org.eclipse.platform.ide.plist'
+  ]
 end
