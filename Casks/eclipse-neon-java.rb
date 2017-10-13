@@ -7,7 +7,7 @@ cask 'eclipse-neon-java' do
   homepage 'https://eclipse.org/neon/'
   license :eclipse
 
-  depends_on cask: 'java'
+  depends_on cask: 'java8'
   depends_on macos: '>= 10.10'
   depends_on arch: :x86_64
 
